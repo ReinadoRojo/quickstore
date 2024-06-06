@@ -1,16 +1,21 @@
 <main id="ia">
     <div class="relative mx-auto px-8 max-w-7xl py-12 md:px-12">
-      <div class="flex w-full mx-auto justify-center">
-        <h1 class="text-negroni-500 font-bold text-2xl">We are working on this!</h1>
-      </div>
+        <div class="flex w-full mx-auto justify-center">
+            <div>Teachable Machine Image Model</div>
+            <button type="button" onclick="init()">Start</button>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </div>
     </div>
-  </main>
-  <script type="text/javascript" is:inline>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
     // More API functions here:
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "./my_model/";
+    const URL = "/iamodel/";
 
     let model, webcam, labelContainer, maxPredictions;
 
@@ -59,4 +64,3 @@
     }
 </script>
 
-  
