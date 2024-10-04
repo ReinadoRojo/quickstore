@@ -1,0 +1,77 @@
+---
+import HighlightLink from "@/components/HighlightLink.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<BaseLayout title="License">
+  <main class="text-white container mx-auto px-8 pt-32 pb-20 space-y-6">
+    <h1 class="text-4xl font-bold mb-5">License</h1>
+    <!-- Template section -->
+    <section>
+      <h2 class="text-2xl font-bold">Template</h2>
+      <p>
+        Template designed and built by <HighlightLink
+          href="https://michaelandreuzza.com/">Michael Andreuzza.</HighlightLink
+        >
+      </p>
+      <p>Sections like the header and footer was modified.</p>
+      <p>
+        Template is licensed under the <HighlightLink
+          href="https://www.gnu.org/licenses/gpl-3.0.html"
+          >GNU General Public License v3.</HighlightLink
+        >
+      </p>
+    </section>
+    <!-- Images section -->
+    <section>
+      <h2 class="text-2xl font-bold">Images</h2>
+      <p>
+        Images made by <HighlightLink href="https://github.com/ReinadoRojo"
+          >ReinadoRojo</HighlightLink
+        >
+      </p>
+      <p>
+        Images are licensed under <HighlightLink
+          href="https://creativecommons.org/licenses/by/4.0/legalcode.en"
+          >CC BY 4.0.</HighlightLink
+        >
+      </p>
+      <p>
+        Attribution example:
+        <br />
+        <code lang="markdown" class="text-sm p-1">
+          [Product Name](image link) by
+          [ReinadoRojo](https://school-project.leiuq.fun/) is licensed under [CC
+          BY
+          4.0![](https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1)![](https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1)](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
+        </code>
+      </p>
+    </section>
+    <!-- IA section -->
+    <section>
+      <h2 class="text-2xl font-bold">IA Detection</h2>
+      <p>
+        Model trained with <HighlightLink
+          href="https://teachablemachine.withgoogle.com/"
+          >Google Teachable Machine.</HighlightLink
+        >
+      </p>
+      <p>
+        IA model running on <HighlightLink href="https://www.tensorflow.org/js"
+          >TensorFlow.js.</HighlightLink
+        >
+      </p>
+      <p>
+        Both (Google Teachable Machine and TensorFlow.js) are part of Google.
+        <br />
+        TensorFlow.js are licensed under the <HighlightLink
+          href="https://www.apache.org/licenses/LICENSE-2.0"
+          >Apache License 2.0.</HighlightLink
+        >
+      </p>
+    </section>
+  </main>
+</BaseLayout>

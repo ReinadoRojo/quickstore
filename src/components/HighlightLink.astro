@@ -1,0 +1,18 @@
+---
+const { href, target = "_blank", rel = "noopener noreferrer" } = Astro.props;
+
+let ftarget = target;
+
+if (href.startsWith("http") || href.startsWith("://")) {
+  ftarget = "_blank";
+}
+---
+
+<a
+  href={href}
+  class="underline hover:text-negroni-500 duration-200"
+  rel={rel}
+  target={ftarget}
+>
+  <slot />
+</a>
